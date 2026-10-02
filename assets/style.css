@@ -1,0 +1,70 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+h1 { font-size: 1.6rem; color: #2d3748; }
+.sub { color: #718096; margin: 4px 0 20px; font-size: .95rem; }
+
+label { display: block; margin: 14px 0 6px; font-size: .9rem; color: #4a5568; font-weight: 600; }
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color .2s, box-shadow .2s;
+}
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,.2);
+}
+
+.check { display: flex; align-items: center; gap: 8px; font-weight: 400; }
+
+button, .btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+button:hover, .btn:hover { background: #5a67d8; }
+button:active, .btn:active { transform: scale(.98); }
+
+.link { text-align: center; margin-top: 18px; font-size: .9rem; color: #718096; }
+.link a { color: #667eea; font-weight: 600; text-decoration: none; }
+
+.alert { padding: 12px 14px; border-radius: 8px; margin-bottom: 8px; font-size: .9rem; }
+.alert.error   { background: #fed7d7; color: #9b2c2c; }
+.alert.success { background: #c6f6d5; color: #276749; }
+.alert ul { padding-left: 18px; }
+
+.info { background: #f7fafc; padding: 14px; border-radius: 8px; line-height: 1.8; color: #4a5568; }
